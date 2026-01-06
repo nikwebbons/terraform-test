@@ -6,3 +6,8 @@ variable "region" {
   default     = "eu-west-2"
   description = "Region in which to create resources"
 }
+
+variable "iam_role_name" {
+  type        = string
+  description = "Name for the IAM role"
+}
