@@ -6,9 +6,9 @@ locals {
 }
 
 module "managed_grafana" {
-  # version = "2.3.0"
-  # source  = "terraform-aws-modules/managed-service-grafana/aws"
-  source = "git@github.com:terraform-aws-modules/terraform-aws-managed-service-grafana.git?ref=6d82b7f0ee28dd51b7309682409f6fae29683ce5"
+  version = "2.3.1"
+  source  = "terraform-aws-modules/managed-service-grafana/aws"
+  # source = "git@github.com:terraform-aws-modules/terraform-aws-managed-service-grafana.git?ref=6d82b7f0ee28dd51b7309682409f6fae29683ce5"
   # Workspace
   name                     = local.env_name
   associate_license        = false
