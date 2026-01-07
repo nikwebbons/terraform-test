@@ -35,6 +35,4 @@ module "managed_grafana" {
       "group_ids" = local.grafana_group_ids
     }
   }
-
-  tags = local.tags
 }
