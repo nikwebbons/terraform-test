@@ -1,4 +1,5 @@
-### Add in any variables which are required by your root terraform
-### You can have multiple tfvars files for each environment (e.g dev, preprod, prod)
-
-iam_role_name = "GithubActionTest1"
+alert_email = "nik.webb@ons.gov.uk"
+project_name = "s3-compliance-monitor"
+monitored_bucket_names = [
+  "mytest12nikw"
+]
