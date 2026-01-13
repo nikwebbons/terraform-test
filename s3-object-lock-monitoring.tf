@@ -21,6 +21,7 @@ resource "aws_cloudwatch_event_rule" "s3_object_lock_changes" {
       eventSource = ["s3.amazonaws.com"]
       eventName = [
         "PutObjectLockConfiguration",
+        "PutBucketObjectLockConfiguration",
         "DeleteObjectLockConfiguration",
         "PutBucketVersioning"
       ]
